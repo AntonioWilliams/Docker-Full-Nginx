@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-COPY html /usr/share/nginx/html
+COPY package.json . para COPY package*.json ./
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
