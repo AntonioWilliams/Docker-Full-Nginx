@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS people (
     name VARCHAR(255) NOT NULL
 );
 `;
+connection.query(createTableSQL)
 
 const sql = `INSERT INTO people(name) values('Wesley')`
 connection.query(sql)
